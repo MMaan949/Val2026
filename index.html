@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day 2026</title>
+    <style>
+        /* Global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100%;
+            background-color: #f9f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            background-color: #ffebef;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #e94e77;
+            animation: fadeIn 2s ease-out;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.5;
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
+        }
+        button {
+            background-color: #e94e77;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d13e62;
+        }
+        .image-gallery img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        /* Background animation */
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .heart {
+            font-size: 50px;
+            color: #e94e77;
+            animation: heartbeat 1s infinite;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="homePage">
+    <h1>Happy Valentine's Day, Baby! ❤️</h1>
+    <button onclick="goToGifts()">Next</button>
+</div>
+
+<div class="container" id="giftsPage" style="display:none;">
+    <h1>Two Special Gifts for You</h1>
+    <p>Gift 1: The gift with 2 words and second word's first letter J puzzle. It's so simple, you love it so much. Go and see by yourself on the bathroom shelf.</p>
+    <p>Well Well Well ......... <br> I Guess, you got something good gurl.😳</p>
+    <p>Gift 2: Now, the main gift of the night. I'm not gonna say more about it. Just see it on his table.</p>
+    <button onclick="goToFinalPage()">Next</button>
+</div>
+
+<div class="container" id="finalPage" style="display:none;">
+    <h1>You & Me Forever 💖</h1>
+    <div class="image-gallery">
+        <img width="400px" height="400px" src="IMG_4329.jpg"" alt="Together 1">
+        <img width="400px" height="400px" src="IMG_8705.jpg" alt="Together 2">
+    </div>
+    <p>Every moment spent with you is a treasure. I can’t imagine a life without your laughter, warmth, and love. You make everything better, and 
+        I'm so grateful to share this beautiful journey with you. Here's to forever, my love! <br>!! HAPPY 4th VALENTINE'S DAY BABY !!</p>
+</div>
+
+<script>
+    function goToGifts() {
+        document.getElementById("homePage").style.display = "none";
+        document.getElementById("giftsPage").style.display = "block";
+    }
+
+    function goToFinalPage() {
+        document.getElementById("giftsPage").style.display = "none";
+        document.getElementById("finalPage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
